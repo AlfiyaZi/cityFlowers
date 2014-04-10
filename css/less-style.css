@@ -124,8 +124,8 @@ a:hover {
   background: #333333;
 }
 .btn.btn-danger {
-  background: red;
-  border: 1px solid red;
+  background: #eb2029;
+  border: 1px solid  #eb2029;
 }
 .btn.btn-danger:hover {
   background: #ed4747;
@@ -138,11 +138,11 @@ a:hover {
   background: #42c557;
 }
 .btn.btn-info {
-  background: red;
-  border: 1px solid red;
+  background:  #eb2029;
+  border: 1px solid  #eb2029;
 }
 .btn.btn-info:hover {
-  background: #2bbdd2;
+  background: red;
 }
 .btn.btn-primary {
   background: #609cec;
@@ -495,5 +495,5 @@ a:hover {
 /* Scroll to top */
 /****************/
 .totop a i {
-  background: red;
+  background: #eb2029;
 }

@@ -230,16 +230,17 @@ table { background: #fff; }
  * Logo
  */
 
-.logo { margin-top: 20px; }
+.logo { margin-top: 5px; }
 
 .logo img {
 	display: inline-block; 
-	max-width: 50px;
+	max-width: 200px;
+    
 }
 
 .logo h1 {
 	position: relative;
-	top: 5px;
+	top: 2px;
 	left: 5px;
 	display: inline-block; 
 	margin: 0;
