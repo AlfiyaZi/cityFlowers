@@ -402,7 +402,7 @@ table { background: #fff; }
 	margin-left: 50px;
 	font-size: 14px;
 font-family: 'Open Sans Condensed', sans-serif;
-	color: #9a9a9a;
+	color: #eb2029;
 }
 
 .btn-cart-md .cart-dropdown { 
@@ -554,7 +554,7 @@ font-family: 'Open Sans Condensed', sans-serif;
 .default-heading h2{
 	margin: 0px;
 	margin-bottom: 10px;
-	font-family: 'Droid Serif', serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 	text-transform: uppercase;
 	font-size: 35px;
 	color: #676767;
