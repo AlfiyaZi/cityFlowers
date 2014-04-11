@@ -938,9 +938,9 @@ font-family: 'Open Sans Condensed', sans-serif;
 }
 	
 .testimonial .testimonial-item blockquote p {
-	font-size: 22px; 
-	line-height: 32px;
-	font-weight: 300;
+	font-size: 18px; 
+	line-height: 28px;
+	font-weight: 215;
 	color: #9a9a9a;
 	text-align: justify;
 }
@@ -1071,7 +1071,7 @@ div.ppt { display:none !important; }
 
 .banner h2 {
 	margin: 0;
-	font-size: 55px;
+	font-size: 35px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 700;
 	text-shadow: 0 0 5px rgba(0,0,0,0.2);
@@ -1109,9 +1109,9 @@ div.ppt { display:none !important; }
 }
 
 .about-company .about-company-item p{
-	font-size: 20px;
-	line-height: 32px;
-	font-weight: 300;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 150;
 	color: #9a9a9a;
 }
 

@@ -5,15 +5,190 @@
 		<!-- Title here -->
 		<title>Флористы</title>
 		<!-- Description, Keywords and Author -->
-		<meta name="description" content="Your description">
-		<meta name="keywords" content="Your,Keywords">
-		<meta name="author" content="ResponsiveWebInc">
+			<!-- Description, Keywords and Author -->
+		
+    <meta name="keywords" content="доставка букетов, заказ букетов доставка, доставка букетов цветов, доставка букетов пермь, заказ цветов доставка букетов, доставка букетов, школа флористики,флористы, флористы пермь.">
+    <meta name="description" content="Интернет магазин цветов.  Доставка букетов цветов на заказ. Заказ букетов и доставка цветов Пермь.">
+		<meta name="author" content="Ziganshina Alfiya">
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
+        
+        
+         <!-- Styles -->
+        <style>
+		
+		
+		
+		/* Portfolio */
+.portfolio {
+	margin-top: 20px;
+}
+.portfolio .col-md-3{
+	
+	margin-right: 0;
+	margin-left: 0;
+}
+.portfolio > figure {
+	position: relative;
+	overflow: hidden;
+}
+.portfolio > figure img {
+	max-width: 100%;
+	display: block;
+}
+.portfolio figcaption {
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+
+	left: 0;
+	top: 0;
+
+	background-color: rgba(58,63,67,.8);
+	padding: 10%;
+
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	transform: translateX(100%);
+
+	-webkit-transition: all 350ms;
+	-moz-transition: all 350ms;
+	-o-transition: all 350ms;
+	transition: all 350ms;
+}
+.portfolio figcaption h4 {
+	color: #fff;
+}
+.portfolio figcaption p {
+	font-size: 0.929em;
+	color: #fff;
+}
+.portfolio > figure:hover figcaption {
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
+}
+		
+		
+/* Navgation */
+.nav-menu, 
+.portfolio > figure.col-md-3{
+	display: none;
+}
+label {
+	padding: 5px 10px;
+	color: #3a3f43;
+	cursor: pointer;
+	display: inline-block;
+}
+.nav-menu:checked + label {
+	color: #fff;
+	background-color: #eb2029;
+	border-radius: 3px;
+}
+#all:checked ~ .portfolio .all,
+#posters:checked ~ .portfolio .poster,
+#illustrations:checked ~ .portfolio .illustration,
+#typography:checked ~ .portfolio .typography,
+#packaging:checked ~ .portfolio .package {
+	display: block;
+}		
+	
+	
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+	label {
+		display: none;
+	}
+
+	.container1 {
+		width: 100%;
+	}
+
+	.portfolio .col-md-3 { 
+    	width: 25%;
+    }
+	.portfolio .all {
+		margin-bottom: 15px;
+	}
+	.portfolio > figure:before {
+		content: attr(data-category);
+		font-size: 1em;
+		padding: 8px;
+		width: 100%;
+		color: #fff;
+		display: block;
+		font-weight: bold;
+		text-transform: capitalize;
+		background-color: rgba(42,47,51,0.8);
+		position: absolute;
+	}
+	.portfolio figcaption {
+		position: relative;
+		opacity: 1;
+
+		-webkit-transform: translateX(0%);
+		-moz-transform: translateX(0%);
+		-ms-transform: translateX(0%);
+		-o-transform: translateX(0%);
+		transform: translateX(0%);
+
+		background-color: #3a3f43;
+	}
+	.portfolio figure:nth-child(odd) figcaption {
+		background-color: #2a2f33;
+	}
+	
+	
+	
+	
+	
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .portfolio .col-md-3 { 
+    	width: 50%;
+    }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+    .portfolio .col-md-3  { 
+    	width: 100%;
+    }
+ 
+  
+
+	
+	
+		
+		
+		</style>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 		<!-- Styles -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
 		<!-- Bootstrap CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+		<link href="css/settings.css" rel="stylesheet">		
+		<!-- FlexSlider Css -->
+		<link rel="stylesheet" href="css/flexslider.css" media="screen" />
 		<!-- Portfolio CSS -->
 		<link href="css/prettyPhoto.css" rel="stylesheet">
 		<!-- Font awesome CSS -->
@@ -25,7 +200,7 @@
 		<!--[if IE]><link rel="stylesheet" href="css/ie-style.css"><![endif]-->
 		
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="aboutus.html#">
+		<link rel="shortcut icon" href="index.html#">
 	</head>
 	
 	<body>
@@ -37,45 +212,45 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h4 class="modal-title">Shopping Cart</h4>
+						<h4 class="modal-title">Корзина</h4>
 					</div>
 					<div class="modal-body">
 						<!-- Items table -->
 						<table class="table table-striped">
 							<thead>
 								<tr>
-									<th>Name</th>
-									<th>Quantity</th>
-									<th>Price</th>
+									<th>Наименование</th>
+									<th>Количество</th>
+									<th>Цена</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<td><a href="aboutus.html#">Exception Reins Evocative</a></td>
-									<td>2</td>
-									<td>$200</td>
-								</tr>
-								<tr>
-									<td><a href="aboutus.html#">Taut Mayoress Alias Appendicitis</a></td>
+									<td><a href="index.html#">Букет "Весна"</a></td>
 									<td>1</td>
-									<td>$190</td>
+									<td>2000 р</td>
 								</tr>
 								<tr>
-									<td><a href="aboutus.html#">Sinter et Molests Perfectionist</a></td>
-									<td>4</td>
-									<td>$99</td>
+									<td><a href="index.html#">Букет "Кудряшка Сью"</a></td>
+									<td>1</td>
+									<td>766,50 руб</td>
+								</tr>
+								<tr>
+									<td><a href="index.html#">Букет для невесты</a></td>
+									<td>1</td>
+									<td>3675,00 руб</td>
 								</tr>
 								<tr>
 									<th></th>
-									<th>Total</th>
-									<th>$489</th>
+									<th>Всего</th>
+									<th>5441,5 р</th>
 								</tr>
 							</tbody>
 						</table>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Continue Shopping</button>
-						<button type="button" class="btn btn-info">Checkout</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Продолжить покупки</button>
+						<button type="button" class="btn btn-info"><a href="checkout.html">Оформить заказ </a></button>
 					</div>
 				</div><!-- /.modal-content -->
 			</div><!-- /.modal-dialog -->
@@ -96,7 +271,7 @@
 								<!-- Header top left content contact -->
 								<div class="header-contact">
 									<!-- Contact number -->
-									<span><i class="fa fa-phone red"></i> 888-888-8888</span>
+									<span> <i class="fa fa-phone red"></i>+7(342)212-75-99</span>
 								</div>
 							</div>
 							<div class="col-md-4 col-sm-4">
@@ -104,7 +279,7 @@
 								<div class=" header-search">
 									<form class="form" role="form">
 										<div class="input-group">
-										  <input type="text" class="form-control" placeholder="Search...">
+										  <input type="text" class="form-control" placeholder="Поиск...">
 										  <span class="input-group-btn">
 											<button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
 										  </span>
@@ -115,26 +290,28 @@
 							<div class="col-md-4 col-sm-4">
 								<!-- Button Kart -->
 								<div class="btn-cart-md">
-									<a class="cart-link" href="aboutus.html#">
-										<!-- Image -->
-										<img class="img-responsive" src="img/cart.png" alt="" />
+									<a class="cart-link" href="index.html#">
+                                  
+
+										<!-- Image 
+										<img class="img-responsive" src="img/cart.png" alt="" /> -->
 										<!-- Heading -->
-										<h4>Shopping Cart</h4>
-										<span>3 items $489/-</span>
+										<h4>Корзина</h4>
+										<span>3 товара 489 р</span>
 										<div class="clearfix"></div>
 									</a>
 									<ul class="cart-dropdown" role="menu">
-										<li>
+										<li>	
 											<!-- Cart items for shopping list -->
 											<div class="cart-item">
 												<!-- Item remove icon -->
-												<a href="aboutus.html#"><i class="fa fa-times"></i></a>
+												<a href="index.html#"><i class="fa fa-times"></i></a>
 												<!-- Image -->
 												<img class="img-responsive img-rounded" src="img/nav-menu/nav1.jpg" alt="" />
 												<!-- Title for purchase item -->
-												<span class="cart-title"><a href="aboutus.html#">Exception Reins Evocative</a></span>
+												<span class="cart-title"><a href="index.html#">Букет "Весна"</a></span>
 												<!-- Cart item price -->
-												<span class="cart-price pull-right red">$200/-</span>
+												<span class="cart-price pull-right red">2625,00 руб</span>
 												<div class="clearfix"></div>
 											</div>
 										</li>
@@ -142,13 +319,13 @@
 											<!-- Cart items for shopping list -->
 											<div class="cart-item">
 												<!-- Item remove icon -->
-												<a href="aboutus.html#"><i class="fa fa-times"></i></a>
+												<a href="index.html#"><i class="fa fa-times"></i></a>
 												<!-- Image -->
 												<img class="img-responsive img-rounded" src="img/nav-menu/nav2.jpg" alt="" />
 												<!-- Title for purchase item -->
-												<span class="cart-title"><a href="aboutus.html#">Taut Mayoress Alias Appendicitis</a></span>
+												<span class="cart-title"><a href="index.html#">Букет "Кудряшка Сью"</a></span>
 												<!-- Cart item price -->
-												<span class="cart-price pull-right red">$190/-</span>
+												<span class="cart-price pull-right red">766,50 руб</span>
 												<div class="clearfix"></div>
 											</div>
 										</li>
@@ -156,20 +333,20 @@
 											<!-- Cart items for shopping list -->
 											<div class="cart-item">
 												<!-- Item remove icon -->
-												<a href="aboutus.html#"><i class="fa fa-times"></i></a>
+												<a href="index.html#"><i class="fa fa-times"></i></a>
 												<!-- Image -->
 												<img class="img-responsive img-rounded" src="img/nav-menu/nav3.jpg" alt="" />
 												<!-- Title for purchase item -->
-												<span class="cart-title"><a href="aboutus.html#">Sinter et Molests Perfectionist</a></span>
+												<span class="cart-title"><a href="index.html#">Букет для невесты</a></span>
 												<!-- Cart item price -->
-												<span class="cart-price pull-right red">$99/-</span>
+												<span class="cart-price pull-right red">3675,00 руб</span>
 												<div class="clearfix"></div>
 											</div>
 										</li>
 										<li>
 											<!-- Cart items for shopping list -->
 											<div class="cart-item">
-												<a class="btn btn-danger" data-toggle="modal" href="aboutus.html#shoppingcart1">Checkout</a>
+												<a class="btn btn-danger" data-toggle="modal" href="index.html#shoppingcart1">Оформить заказ</a>
 											</div>
 										</li>
 									</ul>
@@ -182,16 +359,16 @@
 					<div class="row">
 						<div class="col-md-4 col-sm-5">
 							<!-- Link -->
-							<a href="index.html">
+							<!--<a href="index.html">
 								<!-- Logo area -->
 								<div class="logo">
 									<img class="img-responsive" src="img/logo.png" alt="" />
 									<!-- Heading -->
-									<h1>CakeFactory</h1>
+									<h1></h1>
 									<!-- Paragraph -->
 									<p>Facility ester expedite instinct.</p>
 								</div>
-							</a>
+							
 						</div>
 						<div class="col-md-8 col-sm-7">
 							<!-- Navigation -->
@@ -210,88 +387,11 @@
 									<!-- Collect the nav links, forms, and other content for toggling -->
 									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 										<ul class="nav navbar-nav">
-											<li><a href="index.html"><img src="img/nav-menu/nav1.jpg" class="img-responsive" alt="" /> Home</a></li>
-											<li class="dropdown hidden-xs">
-												<a href="aboutus.html#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/nav-menu/nav2.jpg" class="img-responsive" alt="" /> Menu <b class="caret"></b></a>
-												<ul class="dropdown-menu dropdown-md">
-													<li>
-														<div class="row">
-															<div class="col-md-4 col-sm-6">
-																<!-- Menu Item -->
-																<div class="menu-item">
-																	<!-- Heading -->
-																	<h3>Vegetarian</h3>
-																	<!-- Image -->
-																	<img src="img/dish/dish1.jpg" class="img-responsive" alt="" />
-																	<!-- Paragraph -->
-																	<p>Sea nut perspicacity under omni piste natures mirror of there with consequent.</p>
-																	<!-- Button -->
-																	<a href="menu.html" class="btn btn-danger btn-xs">View Menu</a>
-																</div>
-															</div>
-															<div class="col-md-4 col-sm-6">
-																<!-- Menu Item -->
-																<div class="menu-item">
-																	<!-- Heading -->
-																	<h3>Non-Vegetarian</h3>
-																	<!-- Image -->
-																	<img src="img/dish/dish2.jpg" class="img-responsive" alt="" />
-																	<!-- Paragraph -->
-																	<p>Sea nut perspicacity under omni piste natures mirror as precode consequent.</p>
-																	<!-- Button -->
-																	<a href="menu.html" class="btn btn-danger btn-xs">View Menu</a>
-																</div>
-															</div>
-															<div class="col-md-4">
-																<!-- Menu Item -->
-																<div class="menu-item">
-																	<!-- Heading -->
-																	<h3>Special Menu</h3>
-																	<!-- Image -->
-																	<img src="img/dish/dish3.jpg" class="img-responsive" alt="" />
-																	<!-- Paragraph -->
-																	<p>Sea nut perspicacity under omni piste natures mirror consequent.</p>
-																	<!-- Button -->
-																	<a href="menu.html" class="btn btn-danger btn-xs">View Menu</a>
-																</div>
-															</div>
-														</div>
-													</li>
-												</ul>
-											</li>
-											<li class="dropdown visible-xs">
-												<a href="aboutus.html#" class="dropdown-toggle" data-toggle="dropdown"> Menu <b class="caret"></b></a>
-												<ul class="dropdown-menu">
-													<li><a href="menu.html">Vegetarian</a></li>
-													<li><a href="menu.html">Non Vegetarian</a></li>
-													<li><a href="menu.html">Special Menu</a></li>
-												</ul>
-											</li>
-											<li><a href="gallery.html"><img src="img/nav-menu/nav3.jpg" class="img-responsive" alt="" /> Gallery</a></li>
-											<li class="dropdown">
-												<a href="aboutus.html#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/nav-menu/nav4.jpg" class="img-responsive" alt="" /> Shop <b class="caret"></b></a>
-												<ul class="dropdown-menu">
-													<li><a href="items.html">Shopping</a></li>
-													<li><a href="item-single.html">Order Now</a></li>
-													<li><a href="checkout.html">Checkout</a></li>
-													<li><a href="reserve-seats.html">Reservation</a></li>
-													<li><a href="contact.html">Contact Us</a></li>
-												</ul>
-											</li>
-											<li class="dropdown">
-												<a href="aboutus.html#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/nav-menu/nav5.jpg" class="img-responsive" alt="" /> Pages <b class="caret"></b></a>
-												<ul class="dropdown-menu">
-													<li><a href="error.html">404 Error</a></li>
-													<li><a href="0-base.html">Blank Page</a></li>
-													<li><a href="blog.html">Blog</a></li>
-													<li><a href="blog-single.html">Blog Single</a></li>
-													<li><a href="components.html">Components</a></li>
-													<li><a href="general.html">General</a></li>
-													<li><a href="nutrition-info.html">Nutrition Info</a></li>
-													<li><a href="recipe.html">Recipes</a></li>
-												</ul>
-											</li>
-											<li><a href="aboutus.html"><img src="img/nav-menu/nav6.jpg" class="img-responsive" alt="" /> About</a></li>
+											
+										<li> <a href="items.html">Магазин</a></li>
+										<li> <a href="gallery.html">Портфолио</a></li>
+																
+											<li><a href="aboutus.html"> Флористы</a></li>
 										</ul>
 									</div><!-- /.navbar-collapse -->
 								</div><!-- /.container-fluid -->
@@ -303,23 +403,8 @@
 			
 			<!-- Header End -->
 			
-			<!-- Banner Start -->
 			
-			<div class="banner padd">
-				<div class="container">
-					<!-- Image -->
-					<img class="img-responsive" src="img/crown-white.png" alt="" />
-					<!-- Heading -->
-					<h2 class="white">About Us</h2>
-					<ol class="breadcrumb">
-						<li><a href="index.html">Home</a></li>
-						<li class="active">About Us</li>
-					</ol>
-					<div class="clearfix"></div>
-				</div>
-			</div>
 			
-			<!-- Banner End -->
 			
 			
 			
@@ -334,14 +419,14 @@
 								<!-- About Compnay Item -->
 								<div class="about-company-item">
 									<!-- About Company Image -->
-									<img class="img-responsive img-thumbnail" src="img/chef/about-1.jpg" alt="" />
+									<img class="img-responsive img-thumbnail" src="img/chef/about-1.jpg" width="400px"  height="600" halt="" />
 								</div>
 							</div>
 							<div class="col-md-6">
 								<!-- About Compnay Item -->
 								<div class="about-company-item">
 									<!-- Heading -->
-									<h3>About Our <span class="lblue">Restaurant</span></h3>
+									<h3>О нашем магазине </h3>
 									<!-- Paragraph -->
                                     
                                
@@ -352,14 +437,14 @@
 											<!-- About company inner items -->
 											<div class="about-company-inner">
 												<!-- Paragraph with icon -->
-												<span class="company-feature"><i class="fa fa-building-o br-red"></i> <b class="red">10</b> Locations</span>
+												
 											</div>
 										</div>
 										<div class="col-md-6 col-sm-6 col-xs-6">
 											<!-- About company inner items -->
 											<div class="about-company-inner">
 												<!-- Paragraph with icon -->
-												<span class="company-feature"><i class="fa fa-trophy br-lblue"></i> <b class="lblue">10</b> Awards</span>
+											
 											</div>
 										</div>
 										<div class="clearfix visible-xs"></div>
@@ -367,14 +452,13 @@
 											<!-- About company inner items -->
 											<div class="about-company-inner">
 												<!-- Paragraph with icon -->
-												<span class="company-feature"><i class="fa fa-users br-green"></i> <b class="green">15</b> Chefs</span>
-											</div>
+											
 										</div>
 										<div class="col-md-6 col-sm-6 col-xs-6">
 											<!-- About company inner items -->
 											<div class="about-company-inner">
 												<!-- Paragraph with icon -->
-												<span class="company-feature"><i class="fa fa-shopping-cart br-purple"></i> <b class="purple">50</b> Dishes.</span>
+										
 											</div>
 										</div>
 									</div>
@@ -393,7 +477,7 @@
 							<!-- Crown image -->
 							<img class="img-responsive" src="img/crown.png" alt="" />
 							<!-- Heading -->
-							<h2>Our Chefs</h2>
+							<h2>Наши флористы</h2>
 							<!-- Paragraph -->
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
@@ -409,15 +493,12 @@
 										<img class="chefs-img img-responsive" src="img/chef/4.jpg" alt="" />
 									</div>
 									<!--Name / Heading -->
-									<h3><a href="aboutus.html#">Venison Gorky</a></h3>
+									<h3><a href="aboutus.html#">Анна Иванова</a></h3>
 									<!-- Member designation -->
-									<span>Chefs Incharge</span>
+									<span>Lorem ipsum</span>
 									<!-- Social media links -->
 									<div class="social">
-										<a href="aboutus.html#" class="facebook"><i class="fa fa-facebook"></i></a>
-										<a href="aboutus.html#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-										<a href="aboutus.html#" class="twitter"><i class="fa fa-twitter"></i></a>
-										<a href="aboutus.html#" class="pinterest"><i class="fa fa-pinterest"></i></a>
+									<p>Lorem ipsum dolore set amen</p>
 									</div>
 								</div>
 							</div>
@@ -432,15 +513,12 @@
 										<img class="chefs-img img-responsive" src="img/chef/7.jpg" alt="" />
 									</div>
 									<!--Name / Heading -->
-									<h3><a href="aboutus.html#">Million Carey</a></h3>
+									<h3><a href="aboutus.html#">Татьна Кузнецова</a></h3>
 									<!-- Member designation -->
-									<span>Chefs Incharge</span>
+									<span>Lrorem ipsum</span>
 									<!-- Social media links -->
 									<div class="social">
-										<a href="aboutus.html#" class="facebook"><i class="fa fa-facebook"></i></a>
-										<a href="aboutus.html#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-										<a href="aboutus.html#" class="twitter"><i class="fa fa-twitter"></i></a>
-										<a href="aboutus.html#" class="pinterest"><i class="fa fa-pinterest"></i></a>
+										<p>Loerm ipsum dolore set amen </p>
 									</div>
 								</div>
 							</div>
@@ -455,15 +533,12 @@
 										<img class="chefs-img img-responsive" src="img/chef/2.jpg" alt="" />
 									</div>
 									<!--Name / Heading -->
-									<h3><a href="aboutus.html#">Juliet Watson</a></h3>
+									<h3><a href="aboutus.html#">Юлия Ермакова</a></h3>
 									<!-- Member designation -->
-									<span>Chefs Incharge</span>
+									<span>Lorem Ipsum </span>
 									<!-- Social media links -->
 									<div class="social">
-										<a href="aboutus.html#" class="facebook"><i class="fa fa-facebook"></i></a>
-										<a href="aboutus.html#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-										<a href="aboutus.html#" class="twitter"><i class="fa fa-twitter"></i></a>
-										<a href="aboutus.html#" class="pinterest"><i class="fa fa-pinterest"></i></a>
+										<p>Lorem ipsum dolore set amen</p>
 									</div>
 								</div>
 							</div>
@@ -475,42 +550,11 @@
 			
 				<!-- Showcase Start -->
 				
-				<div class="showcase">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6 col-sm-6">
-								<!-- Showcase section item -->
-								<div class="showcase-item">
-									<!-- Image -->
-									<img class="img-responsive" src="img/fruit2.png" alt="" />
-									<!-- Heading -->
-									<h3><a href="aboutus.html#">Equine Porno Sumos</a></h3>
-									<!-- Paragraph -->
-									<p>Nam libero tempore, cum soluta nobis est minis voluptas assum simple and easy to distinguis quo.</p>
-									<div class="clearfix"></div>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6">
-								<!-- Showcase section item -->
-								<div class="showcase-item">
-									<!-- Image -->
-									<img class="img-responsive" src="img/fruit3.png" alt="" />
-									<!-- Heading -->
-									<h3><a href="aboutus.html#">Equine Porno Sumos</a></h3>
-									<!-- Paragraph -->
-									<p>Nam libero tempore, cum soluta nobis est minis voluptas assum simple and easy to distinguis quo.</p>
-									<div class="clearfix"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 				
-				<!-- Showcase End -->
 				
 			</div><!-- / Inner Page Content End -->	
 			
-			<!-- Footer Start -->
+				<!-- Footer Start -->
 			
 			<div class="footer padd">
 				<div class="container">
@@ -518,95 +562,68 @@
 						<div class="col-md-3 col-sm-6">
 							<!-- Footer widget -->
 							<div class="footer-widget">
-								<!-- Logo area -->
-								<div class="logo">
-									<img class="img-responsive" src="img/logo.png" alt="" />
-									<!-- Heading -->
-									<h1>CakeFactory</h1>
-								</div>
-								<!-- Paragraph -->
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
-								<hr />
+								
+								
 								<!-- Heading -->
-								<h6>On-line Payment Clients</h6>
+								<h4>Способы оплаты и доставка</h4>
 								<!-- Images -->
-								<a href="aboutus.html#"><img class="payment img-responsive" src="img/payment/2co.gif" alt="" /></a>
-								<a href="aboutus.html#"><img class="payment img-responsive" src="img/payment/authorizenet.gif" alt="" /></a>
-								<a href="aboutus.html#"><img class="payment img-responsive" src="img/payment/discover.gif" alt="" /></a>
-								<a href="aboutus.html#"><img class="payment img-responsive" src="img/payment/egold.gif" alt="" /></a>
-								<a href="aboutus.html#"><img class="payment img-responsive" src="img/payment/mastercard.gif" alt="" /></a>
-								<a href="aboutus.html#"><img class="payment img-responsive" src="img/payment/paypal.gif" alt="" /></a>
-								<a href="aboutus.html#"><img class="payment img-responsive" src="img/payment/visa.gif" alt="" /></a>
-								<a href="aboutus.html#"><img class="payment img-responsive" src="img/payment/worldpay.gif" alt="" /></a>
+								
+								<a href="index.html#"><img class="payment img-responsive" src="img/payment/mastercard.gif" alt="" /></a>
+								<a href="index.html#"><img class="payment img-responsive" src="img/payment/paypal.gif" alt="" /></a>
+								<a href="index.html#"><img class="payment img-responsive" src="img/payment/visa.gif" alt="" /></a>
+								<a href="index.html#"><img class="payment img-responsive" src="img/payment/worldpay.gif" alt="" /></a>
 							</div> <!--/ Footer widget end -->
 						</div>
 						<div class="col-md-3 col-sm-6">
 							<!-- Footer widget -->
 							<div class="footer-widget">
 								<!-- Heading -->
-								<h4>Famous Dishes</h4>
+								<h4>Интерьер магазина</h4>
 								<!-- Images -->
-								<a href="aboutus.html#"><img class="dish img-responsive" src="img/dish/dish1.jpg" alt="" /></a>
-								<a href="aboutus.html#"><img class="dish img-responsive" src="img/dish/dish1.jpg" alt="" /></a>
-								<a href="aboutus.html#"><img class="dish img-responsive" src="img/dish/dish1.jpg" alt="" /></a>
-								<a href="aboutus.html#"><img class="dish img-responsive" src="img/dish/dish1.jpg" alt="" /></a>
-								<a href="aboutus.html#"><img class="dish img-responsive" src="img/dish/dish1.jpg" alt="" /></a>
-								<a href="aboutus.html#"><img class="dish img-responsive" src="img/dish/dish1.jpg" alt="" /></a>
-								<a href="aboutus.html#"><img class="dish img-responsive" src="img/dish/dish1.jpg" alt="" /></a>
-								<a href="aboutus.html#"><img class="dish img-responsive" src="img/dish/dish1.jpg" alt="" /></a>
-								<a href="aboutus.html#"><img class="dish img-responsive" src="img/dish/dish1.jpg" alt="" /></a>
+                                
+                                
+								<a href="index.html#"><img class="dish img-responsive" src="img/dish/inter1.jpg" alt="" /></a>
+								<a href="index.html#"><img class="dish img-responsive" src="img/dish/inter2.jpg" alt="" /></a>
+								<a href="index.html#"><img class="dish img-responsive" src="img/dish/inter3.jpg" alt="" /></a>
+                                <a href="index.html#"><img class="dish img-responsive" src="img/dish/inter1.jpg" alt="" /></a>
+								<a href="index.html#"><img class="dish img-responsive" src="img/dish/inter2.jpg" alt="" /></a>
+								<a href="index.html#"><img class="dish img-responsive" src="img/dish/inter3.jpg" alt="" /></a>
+							
 							</div> <!--/ Footer widget end -->
 						</div>
 						<div class="clearfix visible-sm"></div>
-						<div class="col-md-3 col-sm-6">
-							<!-- Footer widget -->
-							<div class="footer-widget">
-								<!-- Heading -->
-								<h4>Join Us Today</h4>
-								<!-- Paragraph -->
-								<p>There is no one who loves pain itself, who seeks after it and wants to have it.</p>
-								<!-- Subscribe form -->
-								<form role="form">
-									<div class="form-group">
-										<input class="form-control" type="text" placeholder="Your name" />
-									</div>
-									<div class="form-group">
-										<input class="form-control" type="email" placeholder="Your email" />
-									</div>
-									<button class="btn btn-danger" type="button">Subscribe</button>
-								</form>
-							</div> <!--/ Footer widget end -->
+						<div class="col-md-4 col-sm-6">
+							
 						</div>
-						<div class="col-md-3 col-sm-6">
+						<div class="col-md-4 col-sm-6">
 							<!-- Footer widget -->
 							<div class="footer-widget">
 								<!-- Heading -->
-								<h4>Contact Us</h4>
+								<h4>Контакты</h4>
 								<div class="contact-details">
 									<!-- Address / Icon -->
-									<i class="fa fa-map-marker br-red"></i> <span>#768, 5th floor, N S Building,<br />Csm Block, Park Road,<br /> Bangalore - 234567</span>
-									<div class="clearfix"></div>
-									<!-- Contact Number / Icon -->
-									<i class="fa fa-phone br-green"></i> <span>+91 88-88-888888</span>
-									<div class="clearfix"></div>
-									<!-- Email / Icon -->
-									<i class="fa fa-envelope-o br-lblue"></i> <span><a href="aboutus.html#">abc@example.com</a></span>
-									<div class="clearfix"></div>
-								</div>
-								<!-- Social media icon -->
-								<div class="social">
-									<a href="aboutus.html#" class="facebook"><i class="fa fa-facebook"></i></a>
-									<a href="aboutus.html#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-									<a href="aboutus.html#" class="twitter"><i class="fa fa-twitter"></i></a>
-									<a href="aboutus.html#" class="pinterest"><i class="fa fa-pinterest"></i></a>
-								</div>
-							</div> <!--/ Footer widget end -->
+                                    <address>
+  <strong><h3>Цветы большого города</h3></strong><br>
+  614000, г.Пермь, ул.Пушкина,13 (за клубом УВД)<br>
+ <br>
+ 
+  <abbr title="Phone">Телефон</abbr> +7(342)212-75-99
+  
+</address>
+
+<address>
+  <strong>Захарова Елена</strong><br>
+  <a href="mailto:#">first.last@example.com</a>
+</address>
+									
 						</div>
 					</div>
 					<!-- Copyright -->
 					<div class="footer-copyright">
 						<!-- Paragraph -->
-						<p>&copy; Copyright 2014 <a href="aboutus.html#">Company Name</a></p>
+                        <div class="social">	
+		
+						<p>&copy; Copyright 2014 <a href="index.html#">Цветы большого города</a></p>
 					</div>
 				</div>
 			</div>

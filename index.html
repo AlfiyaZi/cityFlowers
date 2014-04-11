@@ -93,7 +93,7 @@ label {
 }
 #all:checked ~ .portfolio .all,
 #posters:checked ~ .portfolio .poster,
-#bouqets:checked ~ .portfolio .bouqet,
+#illustrations:checked ~ .portfolio .illustration,
 #typography:checked ~ .portfolio .typography,
 #packaging:checked ~ .portfolio .package {
 	display: block;
@@ -358,16 +358,16 @@ label {
 					<div class="row">
 						<div class="col-md-4 col-sm-5">
 							<!-- Link -->
-							<!--<a href="index.html">
+							<a href="index.html">
 								<!-- Logo area -->
-								<!--<div class="logo">
+								<div class="logo">
 									<img class="img-responsive" src="img/logo.png" alt="" />
 									<!-- Heading -->
-									<!--<h1></h1>
+									<h1></h1>
 									<!-- Paragraph -->
-									<!--<p>Facility ester expedite instinct.</p>
+									<p>Facility ester expedite instinct.</p>
 								</div>
-							</a>-->
+							</a>
 						</div>
 						<div class="col-md-8 col-sm-7">
 							<!-- Navigation -->
@@ -411,15 +411,14 @@ label {
 				
                 
            
-                 <form class="content container " >
-
+              <form class="content container " >
 
 <!-- start navigation -->
 <input class="nav-menu" id="all" type="radio" name="filter" checked="checked"/>
 <label for="all">Все</label>
 
-<input class="nav-menu" id="bouquets" type="radio" name="filter"/>
-<label for="bouquet">Букеты</label>
+<input class="nav-menu" id="illustrations" type="radio" name="filter"/>
+<label for="illustrations">Букеты</label>
 
 <input class="nav-menu" id="posters" type="radio" name="filter"/>
 <label for="posters">Композиции</label>
@@ -442,12 +441,16 @@ label {
             <button class="btn btn-primary" type="button">Купить</button>
 		</figcaption>
 	</figure>
-	<figure class="col-md-3  all bouquet" data-category="bouquet">
+	</figure>
+	<figure class="col-md-3  all illustration" data-category="illustration">
 		<img src="images/image-2.jpg"/>
 		<figcaption>
 			<h4>Lorem Ipsum</h4>
+			 <span class="hot-tag "> 150р</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
+            <button class="btn btn-primary" type="button">Купить</button>
 		</figcaption>
+	</figure>
 	</figure>
 	<figure class="col-md-3  all poster" data-category="poster">
 		<img src="images/image-3.jpg"/>
@@ -463,7 +466,7 @@ label {
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
 		</figcaption>
 	</figure>
-	<figure class="col-md-3 all bouquet" data-category="bouquet">
+	<figure class="col-md-3 all illustration" data-category="illustration">
 		<img src="images/image-5.jpg"/>
 		<figcaption>
 			<h4>Lorem Ipsum</h4>
@@ -491,39 +494,11 @@ label {
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
 		</figcaption>
 	</figure>
-	<figure class="col-md-3 all package" data-category="package">
-		<img src="images/image-9.jpg"/>
-		<figcaption>
-			<h4>Lorem Ipsum</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
-		</figcaption>
-	</figure>
-	<figure class="col-md-3 all poster" data-category="poster">
-		<img src="images/image-10.jpg"/>
-		<figcaption>
-			<h4>Lorem Ipsum</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
-		</figcaption>
-	</figure>
-	<figure class="col-md-3 all package" data-category="package">
-		<img src="images/image-11.jpg"/>
-		<figcaption>
-			<h4>Lorem Ipsum</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
-		</figcaption>
-	</figure>
-	<figure class="col-md-3 all illustration" data-category="illustration">
-		<img src="images/image-12.jpg"/>
-		<figcaption>
-			<h4>Lorem Ipsum</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
-		</figcaption>
-	</figure>
+	
 </section>
 <!-- end portfolio -->
 </form>
-<!-- end container -->        
-                
+<!-- end container -->
                 
                 
                 
@@ -606,7 +581,7 @@ label {
 									<!-- Dish Details -->
 									<div class="dish-details">
 										<!-- Heading -->
-										<h3>Доставка</h3>
+										<h3>Курсы флористики</h3>
 										<!-- Paragraph -->
 										<p>At vero eos et accusal gusto for ides residuum lores.</p>
 										<!-- Button -->
@@ -629,7 +604,7 @@ label {
 									<!-- Dish Details -->
 									<div class="dish-details">
 										<!-- Heading -->
-										<h3>Курсы флористики</h3>
+										<h3>Доставка</h3>
 										<!-- Paragraph -->
 										<p>At vero eos et accusal gusto for ides residuum lores.</p>
 										<!-- Button -->
@@ -659,26 +634,34 @@ label {
 						<!-- Menu content container -->
                 
                 
-            
                 
-                 <form class="content container " >
-
+						</div> <!-- /Menu container end -->
+					</div>
+			</div>
+				
+				<!-- Menu End -->
+				
+                
+                
+                
+                
+               <form class="content container " >
 
 <!-- start navigation -->
 <input class="nav-menu" id="all" type="radio" name="filter" checked="checked"/>
-<label for="all">All</label>
+<label for="all">Все</label>
 
 <input class="nav-menu" id="illustrations" type="radio" name="filter"/>
-<label for="illustrations">Illustration</label>
+<label for="illustrations">Букеты</label>
 
 <input class="nav-menu" id="posters" type="radio" name="filter"/>
-<label for="posters">Posters Design</label>
+<label for="posters">Композиции</label>
 
 <input class="nav-menu" id="typography" type="radio" name="filter"/>
-<label for="typography">Typography</label>
+<label for="typography">Корзины</label>
 
 <input class="nav-menu" id="packaging" type="radio" name="filter"/>
-<label for="packaging">Packaging</label>
+<label for="packaging">Сезонные предложения</label>
 <!-- end navigation -->
 
 <!-- start portfolio -->
@@ -687,15 +670,21 @@ label {
 		<img src="images/image-1.jpg"/>
 		<figcaption>
 			<h4>Lorem Ipsum</h4>
+			 <span class="hot-tag "> 150р</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
+            <button class="btn btn-primary" type="button">Купить</button>
 		</figcaption>
+	</figure>
 	</figure>
 	<figure class="col-md-3  all illustration" data-category="illustration">
 		<img src="images/image-2.jpg"/>
 		<figcaption>
 			<h4>Lorem Ipsum</h4>
+			 <span class="hot-tag "> 150р</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
+            <button class="btn btn-primary" type="button">Купить</button>
 		</figcaption>
+	</figure>
 	</figure>
 	<figure class="col-md-3  all poster" data-category="poster">
 		<img src="images/image-3.jpg"/>
@@ -708,9 +697,7 @@ label {
 		<img src="images/image-4.jpg"/>
 		<figcaption>
 			<h4>Lorem Ipsum</h4>
-            <span class="hot-tag br-lblue"> 1500р</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
-            <span class="label label-info">Купить</span>
 		</figcaption>
 	</figure>
 	<figure class="col-md-3 all illustration" data-category="illustration">
@@ -741,41 +728,13 @@ label {
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
 		</figcaption>
 	</figure>
-	<figure class="col-md-3 all package" data-category="package">
-		<img src="images/image-9.jpg"/>
-		<figcaption>
-			<h4>Lorem Ipsum</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
-		</figcaption>
-	</figure>
-	<figure class="col-md-3 all poster" data-category="poster">
-		<img src="images/image-10.jpg"/>
-		<figcaption>
-			<h4>Lorem Ipsum</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
-		</figcaption>
-	</figure>
-	<figure class="col-md-3 all package" data-category="package">
-		<img src="images/image-11.jpg"/>
-		<figcaption>
-			<h4>Lorem Ipsum</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
-		</figcaption>
-	</figure>
-	<figure class="col-md-3 all illustration" data-category="illustration">
-		<img src="images/image-12.jpg"/>
-		<figcaption>
-			<h4>Lorem Ipsum</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
-		</figcaption>
-	</figure>
+	
 </section>
 <!-- end portfolio -->
 </form>
 <!-- end container -->
-                
-                
-                
+            
+            
                 
                 
                 
@@ -784,12 +743,6 @@ label {
                 
                 
 			
-						</div> <!-- /Menu container end -->
-					</div>
-				</div>
-				
-				<!-- Menu End -->
-				
 				<!-- Pricing Start -->
 				
 				<div class="pricing padd">
@@ -822,7 +775,7 @@ label {
 										<div class="clearfix"></div>
 									</div>
 									<!-- Tag -->
-									<span class="hot-tag br-red">1050</span>
+									<span class="hot-tag br-red">1050р</span>
 									<div class="clearfix"></div>
 								</div>
 							</div>
@@ -842,7 +795,7 @@ label {
 										<div class="clearfix"></div>
 									</div>
 									<!-- Tag -->
-									<span class="hot-tag br-lblue">500</span>
+									<span class="hot-tag br-lblue">500р</span>
 									<div class="clearfix"></div>
 								</div>
 							</div>
@@ -863,7 +816,7 @@ label {
 										<div class="clearfix"></div>
 									</div>
 									<!-- Tag -->
-									<span class="hot-tag br-green">2000</span>
+									<span class="hot-tag br-green">2000р</span>
 									<div class="clearfix"></div>
 								</div>
 							</div>
@@ -883,7 +836,7 @@ label {
 										<div class="clearfix"></div>
 									</div>
 									<!-- Tag -->
-									<span class="hot-tag br-red">800</span>
+									<span class="hot-tag br-red">800р</span>
 									<div class="clearfix"></div>
 								</div>
 							</div>
@@ -911,7 +864,7 @@ label {
 											<!-- Slide content -->
 											<div class="slider-content">
 												<!-- Heading -->
-												<h4>Healthy Salad</h4>
+												<h4>Lore Ipsum</h4>
 												<!-- Paragraph -->
 												<p>Sed ut perspiciatis unde omnis iste natus error sitvolua rchitecto beatae vitae dicta sunt explicabo eaque ipsa quae ab illo inventore.</p>
 											</div>
@@ -922,7 +875,7 @@ label {
 											<!-- Slide content -->
 											<div class="slider-content">
 												<!-- Heading -->
-												<h4>White Vanilla Cake</h4>
+												<h4>Букет "Весна"</h4>
 												<!-- Paragraph -->
 												<p>Sed ut perspiciatis unde omnis iste natus error sitvolua rchitecto beatae vitae dicta sunt explicabo eaque ipsa quae ab illo inventore.</p>
 											</div>
@@ -933,7 +886,7 @@ label {
 											<!-- Slide content -->
 											<div class="slider-content">
 												<!-- Heading -->
-												<h4>Tasty Fried Fish</h4>
+												<h4>Lorem Ipsum</h4>
 												<!-- Paragraph -->
 												<p>Sed ut perspiciatis unde omnis iste natus error sitvolua rchitecto beatae vitae dicta sunt explicabo eaque ipsa quae ab illo inventore.</p>
 											</div>
@@ -955,10 +908,10 @@ label {
 												<!-- Your comments -->
 												<blockquote>
 													<!-- Paragraph -->
-													<p>Sed ut perspiciatis unde omnis iste natus error sitvolu accusative ntium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta.</p>
+													<p>Уважаемые флористы! Спасибо Вам большое за ваше творчество! Всегда с удовольствием прихожу в Ваш салон за цветами!</p>
 												</blockquote>
 												<!-- Heading with image -->
-												<h4><img class="img-responsive img-circle" src="img/user.jpg" alt="" /> Jhon Doe<span>, your designation</span></h4>
+												<h4><img class="img-responsive img-circle" src="" alt="" /> Алексей<span></span></h4>
 												<div class="clearfix"></div>
 											</div>
 										</li>
@@ -970,10 +923,10 @@ label {
 												<!-- Your comments -->
 												<blockquote>
 													<!-- Paragraph -->
-													<p> I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the dislikes.</p>
+													<p> Дорогие флористы и сотрудники бутика "Цветы большого города!Какую красоту вы создаете! Всегда с удовольствием покупаю букеты для сотрудников нашей фирмы.Спасибо.Посмотрела Ваш сайт.Просто прелесть.Молодцы!</p>
 												</blockquote>
 												<!-- Heading with image -->
-												<h4><img class="img-responsive img-circle" src="img/user.jpg" alt="" /> Marten<span>, your designation</span></h4>
+												<h4><img class="img-responsive img-circle" src="" alt="" /> Галина<span></span></h4>
 												<div class="clearfix"></div>
 											</div>
 										</li>
@@ -985,10 +938,10 @@ label {
 												<!-- Your comments -->
 												<blockquote>
 													<!-- Paragraph -->
-													<p>At vero eos et accusamus et iusto odio dignis simos ducimus qui bland itiis praes entium volup tatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non laboratory.</p>
+													<p>Уважаемые флористы! Спасибо Вам большое за ваше творчество! Всегда с удовольствием прихожу в Ваш салон за цветами!</p>
 												</blockquote>
 												<!-- Heading with image -->
-												<h4><img class="img-responsive img-circle" src="img/user.jpg" alt="" /> Katrina Doe<span>, your designation</span></h4>
+												<h4><img class="img-responsive img-circle" src="" alt="" /> Алексей<span></span></h4>
 												<div class="clearfix"></div>
 											</div>
 										</li>
@@ -1030,12 +983,15 @@ label {
 								<!-- Heading -->
 								<h4>Интерьер магазина</h4>
 								<!-- Images -->
-								<a href="index.html#"><img class="dish img-responsive" src="img/dish/dish1.jpg" alt="" /></a>
-								<a href="index.html#"><img class="dish img-responsive" src="img/dish/dish1.jpg" alt="" /></a>
-								<a href="index.html#"><img class="dish img-responsive" src="img/dish/dish1.jpg" alt="" /></a>
-								<a href="index.html#"><img class="dish img-responsive" src="img/dish/dish1.jpg" alt="" /></a>
-								<a href="index.html#"><img class="dish img-responsive" src="img/dish/dish1.jpg" alt="" /></a>
-								
+                                
+                                
+								<a href="index.html#"><img class="dish img-responsive" src="img/dish/inter1.jpg" alt="" /></a>
+								<a href="index.html#"><img class="dish img-responsive" src="img/dish/inter2.jpg" alt="" /></a>
+								<a href="index.html#"><img class="dish img-responsive" src="img/dish/inter3.jpg" alt="" /></a>
+                                <a href="index.html#"><img class="dish img-responsive" src="img/dish/inter1.jpg" alt="" /></a>
+								<a href="index.html#"><img class="dish img-responsive" src="img/dish/inter2.jpg" alt="" /></a>
+								<a href="index.html#"><img class="dish img-responsive" src="img/dish/inter3.jpg" alt="" /></a>
+							
 							</div> <!--/ Footer widget end -->
 						</div>
 						<div class="clearfix visible-sm"></div>
