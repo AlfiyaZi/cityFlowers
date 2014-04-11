@@ -6,12 +6,181 @@
 		<title>Интернет магазин цветов.  Доставка букетов цветов на заказ. Заказ букетов и доставка цветов Пермь. Цветы большого города.</title>
 		<!-- Description, Keywords and Author -->
 		
-    <meta name="keywords" content="доставка букетов, заказ букетов доставка, доставка букетов цветов, доставка букетов москва, заказ цветов доставка букетов, доставка букетов, школа флористики,флористы, флористы Пермь.">
+    <meta name="keywords" content="доставка букетов, заказ букетов доставка, доставка букетов цветов, доставка букетов пермь, заказ цветов доставка букетов, доставка букетов, школа флористики,флористы, флористы Пермь.">
     <meta name="description" content="Интернет магазин цветов.  Доставка букетов цветов на заказ. Заказ букетов и доставка цветов Пермь.">
 		<meta name="author" content="Ziganshina Alfiya">
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
+        <!-- Styles -->
+        <style>
+		
+		.container1     { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+		.container1:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+		
+		/* Portfolio */
+.portfolio {
+	margin-top: 20px;
+}
+.portfolio .four.columns {
+	width: 240px;
+	margin-right: 0;
+	margin-left: 0;
+}
+.portfolio > figure {
+	position: relative;
+	overflow: hidden;
+}
+.portfolio > figure img {
+	max-width: 100%;
+	display: block;
+}
+.portfolio figcaption {
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+
+	left: 0;
+	top: 0;
+
+	background-color: rgba(58,63,67,.8);
+	padding: 10%;
+
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	transform: translateX(100%);
+
+	-webkit-transition: all 350ms;
+	-moz-transition: all 350ms;
+	-o-transition: all 350ms;
+	transition: all 350ms;
+}
+.portfolio figcaption h4 {
+	color: #fff;
+}
+.portfolio figcaption p {
+	font-size: 0.929em;
+	color: #fff;
+}
+.portfolio > figure:hover figcaption {
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
+}
+		
+		
+/* Navgation */
+.nav-menu, 
+.portfolio > figure.columns {
+	display: none;
+}
+label {
+	padding: 5px 10px;
+	color: #3a3f43;
+	cursor: pointer;
+	display: inline-block;
+}
+.nav-menu:checked + label {
+	color: #fff;
+	background-color: #3a3f43;
+	border-radius: 3px;
+}
+#all:checked ~ .portfolio .all,
+#posters:checked ~ .portfolio .poster,
+#illustrations:checked ~ .portfolio .illustration,
+#typography:checked ~ .portfolio .typography,
+#packaging:checked ~ .portfolio .package {
+	display: block;
+}		
+	
+	
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+	label {
+		display: none;
+	}
+
+	.container1 {
+		width: 100%;
+	}
+
+	.portfolio .four.columns { 
+    	width: 25%;
+    }
+	.portfolio .all {
+		margin-bottom: 15px;
+	}
+	.portfolio > figure:before {
+		content: attr(data-category);
+		font-size: 1em;
+		padding: 8px;
+		width: 100%;
+		color: #fff;
+		display: block;
+		font-weight: bold;
+		text-transform: capitalize;
+		background-color: rgba(42,47,51,0.8);
+		position: absolute;
+	}
+	.portfolio figcaption {
+		position: relative;
+		opacity: 1;
+
+		-webkit-transform: translateX(0%);
+		-moz-transform: translateX(0%);
+		-ms-transform: translateX(0%);
+		-o-transform: translateX(0%);
+		transform: translateX(0%);
+
+		background-color: #3a3f43;
+	}
+	.portfolio figure:nth-child(odd) figcaption {
+		background-color: #2a2f33;
+	}
+	
+	
+	
+	
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .portfolio .four.columns { 
+    	width: 50%;
+    }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	.container1 {
+		width: 100%;
+	}
+    .portfolio .four.columns  { 
+    	width: 100%;
+    }
+ 
+  
+
+	
+	
+		
+		
+		</style>
+        
+        
 		<!-- Styles -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
 		<!-- Bootstrap CSS -->
@@ -651,6 +820,7 @@
 						<div class="default-heading">
 							
 							<!-- Heading -->
+                           
 							<h2>Наши Услуги</h2>
 							<!-- Paragraph -->
 							<p>В «Цветах нашего города» вы можете заказать цветы с доставкой по Перми. От Вас требуется лишь выбрать букет, а все остальное мы берем на себя. Если Вы не можете определиться, какая именно композиция лучше всего подходит важному событию, вы всегда можете связаться с нами насчет оформления цветами по телефону +7(342) 212 75 99.</p>
@@ -762,8 +932,7 @@
 					<div class="container">
 						<!-- Default Heading -->
 						<div class="default-heading">
-							<!-- Crown image -->
-							<!--<img class="img-responsive" src="img/crown.png" alt="" />-->
+							
 							<!-- Heading -->
 							<h2>Наши работы</h2>
 							<!-- Paragraph -->
@@ -778,7 +947,7 @@
                         
                         
                         
-                        <form class="content container clearfix">
+   <form class="content container " >
 
 <!-- start navigation -->
 <input class="nav-menu" id="all" type="radio" name="filter" checked="checked"/>
@@ -799,84 +968,84 @@
 
 <!-- start portfolio -->
 <section class="portfolio">
-	<figure class="four columns all poster" data-category="poster">
+	<figure class="col-md-3 all poster" data-category="poster">
 		<img src="images/image-1.jpg"/>
 		<figcaption>
 			<h4>Lorem Ipsum</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
 		</figcaption>
 	</figure>
-	<figure class="four columns all illustration" data-category="illustration">
+	<figure class="col-md-3  all illustration" data-category="illustration">
 		<img src="images/image-2.jpg"/>
 		<figcaption>
 			<h4>Lorem Ipsum</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
 		</figcaption>
 	</figure>
-	<figure class="four columns all poster" data-category="poster">
+	<figure class="col-md-3  all poster" data-category="poster">
 		<img src="images/image-3.jpg"/>
 		<figcaption>
 			<h4>Lorem Ipsum</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
 		</figcaption>
 	</figure>
-	<figure class="four columns all typography" data-category="typography">
+	<figure class="col-md-3 all typography" data-category="typography">
 		<img src="images/image-4.jpg"/>
 		<figcaption>
 			<h4>Lorem Ipsum</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
 		</figcaption>
 	</figure>
-	<figure class="four columns all illustration" data-category="illustration">
+	<figure class="col-md-3 all illustration" data-category="illustration">
 		<img src="images/image-5.jpg"/>
 		<figcaption>
 			<h4>Lorem Ipsum</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
 		</figcaption>
 	</figure>
-	<figure class="four columns all poster" data-category="poster">
+	<figure class="col-md-3 all poster" data-category="poster">
 		<img src="images/image-6.jpg"/>
 		<figcaption>
 			<h4>Lorem Ipsum</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
 		</figcaption>
 	</figure>
-	<figure class="four columns all illustration" data-category="illustration">
+	<figure class="col-md-3 all illustration" data-category="illustration">
 		<img src="images/image-7.jpg"/>
 		<figcaption>
 			<h4>Lorem Ipsum</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
 		</figcaption>
 	</figure>
-	<figure class="four columns all typography" data-category="typography">
+	<figure class="col-md-3 all typography" data-category="typography">
 		<img src="images/image-8.jpg"/>
 		<figcaption>
 			<h4>Lorem Ipsum</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
 		</figcaption>
 	</figure>
-	<figure class="four columns all package" data-category="package">
+	<figure class="col-md-3 all package" data-category="package">
 		<img src="images/image-9.jpg"/>
 		<figcaption>
 			<h4>Lorem Ipsum</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
 		</figcaption>
 	</figure>
-	<figure class="four columns all poster" data-category="poster">
+	<figure class="col-md-3 all poster" data-category="poster">
 		<img src="images/image-10.jpg"/>
 		<figcaption>
 			<h4>Lorem Ipsum</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
 		</figcaption>
 	</figure>
-	<figure class="four columns all package" data-category="package">
+	<figure class="col-md-3 all package" data-category="package">
 		<img src="images/image-11.jpg"/>
 		<figcaption>
 			<h4>Lorem Ipsum</h4>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
 		</figcaption>
 	</figure>
-	<figure class="four columns all illustration" data-category="illustration">
+	<figure class="col-md-3 all illustration" data-category="illustration">
 		<img src="images/image-12.jpg"/>
 		<figcaption>
 			<h4>Lorem Ipsum</h4>
@@ -895,201 +1064,7 @@
                         
                         
                         
-                        <!--Menu--->
-						<div class="menu-container">
-							<div class="row">
-								<div class="col-md-4 col-sm-4">
-									<!-- Menu header -->
-									<div class="menu-head">
-										<!-- Image for menu item -->
-										<img class="menu-img img-responsive img-thumbnail" src="img/menu/menu1.jpg" alt="" />
-										<!-- Menu title / Heading -->
-										<h3>Seafood</h3>
-										<!-- Border for above heading -->
-										<div class="title-border br-red"></div>
-									</div>
-									<!-- Menu item details -->
-									<div class="menu-details br-red">
-										<!-- Menu list -->
-										<ul class="list-unstyled">
-											<li>
-												<div class="menu-list-item">
-													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="index.html#">Fish</a> 
-													<!-- Price badge -->
-													<span class="pull-right">$12</span>
-													<div class="clearfix"></div>
-												</div>
-											</li>
-											<li>
-												<div class="menu-list-item">
-													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="index.html#">Consequent</a>
-													<!-- Price badge -->
-													<span class="pull-right">$9</span>
-													<div class="clearfix"></div>
-												</div>
-											</li>
-											<li>
-												<div class="menu-list-item">
-													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="index.html#">Praising Pain</a>
-													<!-- Price badge -->
-													<span class="pull-right">$19</span>
-													<div class="clearfix"></div>
-												</div>
-											</li>
-											<li>
-												<div class="menu-list-item">
-													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="index.html#">Exception Tint</a>
-													<!-- Price badge -->
-													<span class="pull-right">$6</span>
-													<div class="clearfix"></div>
-												</div>
-											</li>
-											<li>
-												<div class="menu-list-item">
-													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="index.html#">Laborious Rhys</a>
-													<!-- Price badge -->
-													<span class="pull-right">$29</span>
-													<div class="clearfix"></div>
-												</div>
-											</li>
-										</ul>
-									</div><!-- / Menu details end -->
-								</div>
-								<div class="col-md-4 col-sm-4">
-									<!-- Menu header -->
-									<div class="menu-head">
-										<!-- Image for menu item -->
-										<img class="menu-img img-responsive img-thumbnail" src="img/menu/menu2.jpg" alt="" />
-										<!-- Menu title / Heading -->
-										<h3>Chicken</h3>
-										<!-- Border for above heading -->
-										<div class="title-border br-green"></div>
-									</div>
-									<!-- Menu item details -->
-									<div class="menu-details br-green">
-										<!-- Menu list -->
-										<ul class="list-unstyled">
-											<li>
-												<div class="menu-list-item">
-													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="index.html#">Fried Chicken</a>
-													<!-- Price badge -->
-													<span class="pull-right">$29</span>
-													<div class="clearfix"></div>
-												</div>
-											</li>
-											<li>
-												<div class="menu-list-item">
-													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="index.html#">Chicken Curie</a>
-													<!-- Price badge -->
-													<span class="pull-right">$49</span>
-													<div class="clearfix"></div>
-												</div>
-											</li>
-											<li>
-												<div class="menu-list-item">
-													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="index.html#">Praising Pain</a>
-													<!-- Price badge -->
-													<span class="pull-right">$19</span>
-													<div class="clearfix"></div>
-												</div>
-											</li>
-											<li>
-												<div class="menu-list-item">
-													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="index.html#">Exception Tint</a>
-													<!-- Price badge -->
-													<span class="pull-right">$6</span>
-													<div class="clearfix"></div>
-												</div>
-											</li>
-											<li>
-												<div class="menu-list-item">
-													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="index.html#">Laborious Rhys</a>
-													<!-- Price badge -->
-													<span class="pull-right">$29</span>
-													<div class="clearfix"></div>
-												</div>
-											</li>
-										</ul>
-									</div><!-- / Menu details end -->
-								</div>
-								<div class="col-md-4 col-sm-4">
-									<!-- Menu header -->
-									<div class="menu-head">
-										<!-- Image for menu item -->
-										<img class="menu-img img-responsive img-thumbnail" src="img/menu/menu3.jpg" alt="" />
-										<!-- Menu title / Heading -->
-										<h3>Dessert</h3>
-										<!-- Border for above heading -->
-										<div class="title-border br-lblue"></div>
-									</div>
-									<!-- Menu item details -->
-									<div class="menu-details br-lblue">
-										<!-- Menu list -->
-										<ul class="list-unstyled">
-											<li>
-												<div class="menu-list-item">
-													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="index.html#">Choco Nuts</a>
-													<!-- Price badge -->
-													<span class="pull-right">$2</span>
-													<div class="clearfix"></div>
-												</div>
-											</li>
-											<li>
-												<div class="menu-list-item">
-													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="index.html#">Venial Cup</a>
-													<!-- Price badge -->
-													<span class="pull-right">$4</span>
-													<div class="clearfix"></div>
-												</div>
-											</li>
-											<li>
-												<div class="menu-list-item">
-													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="index.html#">Praising Pain</a>
-													<!-- Price badge -->
-													<span class="pull-right">$9</span>
-													<div class="clearfix"></div>
-												</div>
-											</li>
-											<li>
-												<div class="menu-list-item">
-													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="index.html#">Exception Tint</a>
-													<!-- Price badge -->
-													<span class="pull-right">$6</span>
-													<div class="clearfix"></div>
-												</div>
-											</li>
-											<li>
-												<div class="menu-list-item">
-													<!-- Icon -->
-													<i class="fa fa-angle-right"></i> <a href="index.html#">Laborious Rhys</a>
-													<!-- Price badge -->
-													<span class="pull-right">$5</span>
-													<div class="clearfix"></div>
-												</div>
-											</li>
-										</ul>
-									</div><!-- / Menu details end -->
-								</div>
-							</div>
-						</div> <!-- /Menu container end -->
-					</div>
-				</div>
-				
-				<!-- Menu End -->
+                       
 				
 				<!-- Pricing Start -->
 				
@@ -1193,7 +1168,6 @@
 				</div>
 				
 				<!-- Pricing End -->
-				
 				
 				
 				<!-- Testimonial Start -->
