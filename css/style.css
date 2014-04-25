@@ -166,7 +166,7 @@ table { background: #fff; }
 	display: inline-block;
 	margin-top: 7px;
 	font-size: 20px;
-	font-weight:600;
+	font-weight:400;
 	font-family: 'Open Sans Condensed', sans-serif;
 	color: #898989;
 }
@@ -230,7 +230,8 @@ table { background: #fff; }
  * Logo
  */
 
-.logo { margin-top: 2px; }
+.logo { margin-top: 1px; margin-left:-10px; }
+ 
 
 .logo img {
 	display: inline-block; 
@@ -925,7 +926,7 @@ font-family: 'Open Sans Condensed', sans-serif;
 	top: 95px;
 	display: inline-block;
 	width: 100px;
-	font-size: 200px;
+	font-size: 65px;
 	line-height: 0px;
 	float: left;
 }
@@ -938,8 +939,8 @@ font-family: 'Open Sans Condensed', sans-serif;
 }
 	
 .testimonial .testimonial-item blockquote p {
-	font-size: 18px; 
-	line-height: 28px;
+	font-size: 14px; 
+	line-height: 18px;
 	font-weight: 215;
 	color: #9a9a9a;
 	text-align: justify;
